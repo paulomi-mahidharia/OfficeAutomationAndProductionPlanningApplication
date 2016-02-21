@@ -1,0 +1,1068 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="admin.master.cs" Inherits="admin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Bullion Flexipack</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="icon" href="Images/favicon.ico" type="image/ico" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="Dashboard" />
+    <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina" />
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <!--external css-->
+    <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="assets/css/zabuto_calendar.css" />
+    <link rel="stylesheet" type="text/css" href="assets/js/gritter/css/jquery.gritter.css" />
+    <link rel="stylesheet" type="text/css" href="assets/lineicons/style.css" />
+    <!-- Custom styles for this template -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/style-responsive.css" rel="stylesheet" />
+    <script src="assets/js/chart-master/Chart.js"></script>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <form id="form1" runat="server">
+    <section id="container">
+      <!-- **********************************************************************************************************************************************************
+      TOP BAR CONTENT & NOTIFICATIONS
+      *********************************************************************************************************************************************************** -->
+      <!--header start-->
+      <header class="header black-bg dontprint" id="hiddenTop">
+              <div class="sidebar-toggle-box">
+                  <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+              </div>
+            <!--logo start-->
+            <a href="home.aspx" class="logo"><img src="assets/img/logo.jpg" style="width:70px;margin-bottom:10px;"/></a>
+            <!--logo end-->
+            <div class="nav notify-row" id="top_menu">
+                <!--  notification start -->
+                <ul class="nav top-menu">
+                    <!-- settings start -->
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="home.aspx#">
+                            <i class="fa fa-tasks"></i>
+                            <span class="badge bg-theme">4</span>
+                        </a>
+                        <ul class="dropdown-menu extended tasks-bar">
+                            <div class="notify-arrow notify-arrow-green"></div>
+                            
+                            <li>
+                                <a href="Report1.aspx#">
+                                    <div class="task-info">
+                                        <div class="desc">Customer-Product Report</div>
+                                       
+                                    </div>
+                                    
+                                </a>
+                            </li>
+                            <li>
+                                <a href="AttendanceReport.aspx#">
+                                    <div class="task-info">
+                                        <div class="desc">Today's Attendance</div>
+                                        <div class="percent"><asp:Label ID="lblPResentPerc" runat="server" />%</div>
+                                    </div>
+                                    <div class="progress progress-striped">
+                                        <div id="attendanceperc" runat="server" class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                            <span class="sr-only">100% Complete (warning)</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="ProPlanning.aspx#">
+                                    <div class="task-info">
+                                        <div class="desc">Order Production planning</div>
+                                        
+                                    </div>
+                                   
+                                </a>
+                            </li>
+                            <li>
+                                <a href="ProductPlanning.aspx#">
+                                    <div class="task-info">
+                                        <div class="desc">Product Planning</div>
+                                        
+                                    </div>
+                                   
+                                </a>
+                            </li>
+                            <li class="external">
+                                <a href="AllReports.aspx#" style="color:Blue">See All Reports</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- settings end -->
+                    <!-- inbox dropdown start-->
+                 <!--    <li id="header_inbox_bar" class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="home.aspx#">
+                            <i class="fa fa-envelope-o"></i>
+                            <span class="badge bg-theme">5</span>
+                        </a>
+                        <ul class="dropdown-menu extended inbox">
+                            <div class="notify-arrow notify-arrow-green"></div>
+                            <li>
+                                <p class="green">You have 5 new mail</p>
+                            </li>
+                            <li>
+                                <a href="home.aspx#">
+                                    <span class="photo"><img alt="avatar" src="assets/img/ui-zac.jpg"></span>
+                                    <span class="subject">
+                                    <span class="from">Nari Shahani</span>
+                                    <span class="time">Just now</span>
+                                    </span>
+                                    <span class="message">
+                                        Hi Yogesh, what about himalaya?
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="home.aspx#">
+                                    <span class="photo"><img alt="avatar" src="assets/img/ui-divya.jpg"></span>
+                                    <span class="subject">
+                                    <span class="from">mrs Sahani</span>
+                                    <span class="time">40 mins.</span>
+                                    </span>
+                                    <span class="message">
+                                     Hi, I need your help with this.
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="home.aspx#">
+                                    <span class="photo"><img alt="avatar" src="assets/img/ui-danro.jpg"></span>
+                                    <span class="subject">
+                                    <span class="from">Lalit Sahani</span>
+                                    <span class="time">2 hrs.</span>
+                                    </span>
+                                    <span class="message">
+                                        Send me Designe
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="home.aspx#">
+                                    <span class="photo"><img alt="avatar" src="assets/img/ui-sherman.jpg"></span>
+                                    <span class="subject">
+                                    <span class="from">Dj Sherman</span>
+                                    <span class="time">4 hrs.</span>
+                                    </span>
+                                    <span class="message">
+                                        Please, answer asap.
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="home.aspx#">See all mail</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- inbox dropdown end -->
+                </ul>
+                <!--  notification end -->
+            </div>
+            <div class="top-menu form-inline">
+            	<ul class="nav pull-right top-menu">
+                    <li style="margin-top:15px;margin-right:5px"><asp:Button ID="Button2" runat="server" UseSubmitBehavior="false"
+                            Text="Lock Screen" onclick="Button2_Click" class="btn btn-theme"></asp:Button></li>
+                    <li style="margin-top:15px;margin-right:5px"><asp:Button ID="Button3" runat="server" UseSubmitBehavior="false" 
+                            Text="Change Password" class="btn btn-theme" onclick="Button3_Click"></asp:Button></li>
+                    <li style="margin-top:15px;"><asp:Button ID="Button1" UseSubmitBehavior="false" class="btn btn-theme" runat="server" Text="Logout" 
+                            onclick="Button1_Click"></asp:Button></li>
+            	</ul>
+            </div>
+        </header>
+      <!--header end-->
+      
+      <!-- **********************************************************************************************************************************************************
+      MAIN SIDEBAR MENU
+      *********************************************************************************************************************************************************** -->
+      <!--sidebar start-->
+      <aside class="dontprint">
+         
+          <div id="sidebar"  class="nav-collapse ">
+              <!-- sidebar menu start-->
+              <ul class="sidebar-menu" id="nav-accordion">
+              
+              	  <p class="centered"><a href="profile.aspx"><asp:Image ID="Image1"  runat="server" class="img-circle" width="60" ></asp:Image></a></p>
+              	  <h5 class="centered"><asp:Label ID="Label1" runat="server" Text=" "></asp:Label></h5>
+              	  	
+                  <li class="mt">
+                      <a class="active" href="home.aspx">
+                          <i class="fa fa-dashboard"></i>
+                          <span>Home</span>
+                      </a>
+                  </li>
+                   <div id="MDDiv" runat="server" visible="false">
+                  <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-desktop"></i>
+                          <span>Employee</span>
+                      </a>
+                      <ul class="sub">
+                         
+                          <li><a  href="EmployeeList.aspx">Employee List</a></li>
+                          
+                      </ul>
+                  </li>
+
+                   <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-desktop"></i>
+                          <span>Attendance</span>
+                      </a>
+                      <ul class="sub">
+                         
+                          <li><a  href="ViewAttendance.aspx">View Attendances</a></li>
+                          <li><a  href="EmpAttendance.aspx">Employee's Attendance Analysis</a></li>
+                      </ul>
+                  </li>
+
+                  <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-cogs"></i>
+                          <span>Customer</span>
+                      </a>
+                      <ul class="sub">
+                          <li><a  href="EditCustomer.aspx">Add Customer</a></li>
+                          <li><a  href="CustomerList.aspx">Customer List</a></li>
+                          
+                        
+                      </ul>
+                  </li>
+                   <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-cogs"></i>
+                          <span>Product</span>
+                      </a>
+                      <ul class="sub">
+                          <li><a  href="NewProduct.aspx">New Product</a></li>
+                          <li><a  href="ProdList.aspx">Product List</a></li>
+                          
+                        
+                      </ul>
+                  </li>
+                  <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-cogs"></i>
+                          <span>Ouotation</span>
+                      </a>
+                      <ul class="sub">
+                          <li><a  href="QuotationDetails.aspx">New Quotation</a></li>
+                          <li><a  href="QuotationList.aspx">Quotation History</a></li>
+                          
+                        
+                      </ul>
+                  </li>
+                  <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-cogs"></i>
+                          <span>Orders</span>
+                      </a>
+                      <ul class="sub">
+                    
+                          <li><a  href="OrderList.aspx">Order List</a></li>
+                          
+                        
+                      </ul>
+                  </li>
+                   <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-cogs"></i>
+                          <span> Invoices</span>
+                      </a>
+                      <ul class="sub">
+                          
+                           <li><a  href="ViewInvoice.aspx">View Invoices</a></li>
+                      </ul>
+                  </li>
+                 
+                  <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-book"></i>
+                          <span>Supplier</span>
+                      </a>
+                      <ul class="sub">
+                         
+                          <li><a  href="SupplierList.aspx">Supplier List</a></li>
+                          
+                          
+                      </ul>
+                  </li>
+                  <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-book"></i>
+                          <span>Raw Material</span>
+                      </a>
+                      <ul class="sub">
+                        
+                          <li><a  href="RawMatList.aspx">Raw Material List</a></li>
+                          
+                          
+                      </ul>
+                  </li>
+                  
+                    <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-cogs"></i>
+                          <span>Inventory</span>
+                      </a>
+                      <ul class="sub">
+                         
+                          <li><a  href="InventoryList.aspx">Inventory List</a></li>
+                         
+                          
+                        
+                      </ul>
+                  </li>
+            
+
+          </div>
+          <div id="MarketingDiv" runat="server" visible="false">
+         
+
+                  <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-desktop"></i>
+                          <span>Employee</span>
+                      </a>
+                      <ul class="sub">
+                       
+                          <li><a  href="EmployeeList.aspx">Employee List</a></li>
+                          
+                      </ul>
+                  </li>
+                  <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-cogs"></i>
+                          <span>Customer</span>
+                      </a>
+                      <ul class="sub">
+                          <li><a  href="EditCustomer.aspx">Add Customer</a></li>
+                          <li><a  href="CustomerList.aspx">Customer List</a></li>
+                          
+                        
+                      </ul>
+                  </li>
+                   <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-cogs"></i>
+                          <span>Product</span>
+                      </a>
+                      <ul class="sub">
+                          <li><a  href="NewProduct.aspx">New Product</a></li>
+                          <li><a  href="ProdList.aspx">Product List</a></li>
+                          
+                        
+                      </ul>
+                  </li>
+                   <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-cogs"></i>
+                          <span>Ouotation</span>
+                      </a>
+                      <ul class="sub">
+                         
+                          <li><a  href="QuotationList.aspx">Quotation History</a></li>
+                          
+                        
+                      </ul>
+                  </li>
+                   <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-cogs"></i>
+                          <span>Orders</span>
+                      </a>
+                      <ul class="sub">
+                         
+                          <li><a  href="OrderList.aspx">Order List</a></li>
+                          
+                        
+                      </ul>
+                  </li>
+                  
+                   <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-cogs"></i>
+                          <span> Invoices</span>
+                      </a>
+                      <ul class="sub">
+                          
+                           <li><a  href="ViewInvoice.aspx">View Invoices</a></li>
+                      </ul>
+                  </li>
+             
+
+          </div>
+          <div id="ComercialDiv" runat="server" visible="false">
+      
+                  <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-desktop"></i>
+                          <span>Employee</span>
+                      </a>
+                      <ul class="sub">
+                       
+                          <li><a  href="EmployeeList.aspx">Employee List</a></li>
+                          
+                      </ul>
+                  </li>
+                  <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-cogs"></i>
+                          <span>Customer</span>
+                      </a>
+                      <ul class="sub">
+                          <li><a  href="EditCustomer.aspx">Add Customer</a></li>
+                          <li><a  href="CustomerList.aspx">Customer List</a></li>
+                          
+                        
+                      </ul>
+                  </li>
+                   <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-cogs"></i>
+                          <span>Product</span>
+                      </a>
+                      <ul class="sub">
+                          <li><a  href="NewProduct.aspx">New Product</a></li>
+                          <li><a  href="ProdList.aspx">Product List</a></li>
+                          
+                        
+                      </ul>
+                  </li>
+                   <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-cogs"></i>
+                          <span>Ouotation</span>
+                      </a>
+                      <ul class="sub">
+                          <li><a  href="QuotationDetails.aspx">New Quotation</a></li>
+                          <li><a  href="QuotationList.aspx">Quotation History</a></li>
+                          
+                        
+                      </ul>
+                  </li>
+                   <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-cogs"></i>
+                          <span>Orders</span>
+                      </a>
+                      <ul class="sub">
+                          <li><a  href="NewOrder.aspx">New Order</a></li>
+                          <li><a  href="OrderList.aspx">Order List</a></li>
+                          
+                        
+                      </ul>
+                  </li>
+                  
+                   <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-cogs"></i>
+                          <span> Invoices</span>
+                      </a>
+                      <ul class="sub">
+                          
+                           <li><a  href="ViewInvoice.aspx">View Invoices</a></li>
+                      </ul>
+                  </li>
+                    <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-cogs"></i>
+                          <span>Inventory</span>
+                      </a>
+                      <ul class="sub">
+                        
+                          <li><a  href="InventoryList.aspx">Inventory List</a></li>
+                         
+                          
+                        
+                      </ul>
+                  </li>
+                 
+                 
+
+              
+          </div>
+          <div id="ProDiv" runat="server" visible="false">
+    
+                  <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-desktop"></i>
+                          <span>Employee</span>
+                      </a>
+                      <ul class="sub">
+                         
+                          <li><a  href="EmployeeList.aspx">Employee List</a></li>
+                          
+                      </ul>
+                  </li>
+
+                  
+
+                 
+                   <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-cogs"></i>
+                          <span>Product</span>
+                      </a>
+                      <ul class="sub">
+                          <li><a  href="NewProduct.aspx">New Product</a></li>
+                          <li><a  href="ProdList.aspx">Product List</a></li>
+                          
+                        
+                      </ul>
+                  </li>
+                   <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-cogs"></i>
+                          <span>Ouotation</span>
+                      </a>
+                      <ul class="sub">
+                        
+                          <li><a  href="QuotationList.aspx">Quotation History</a></li>
+                          
+                        
+                      </ul>
+                  </li>
+                   <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-cogs"></i>
+                          <span>Orders</span>
+                      </a>
+                      <ul class="sub">
+                          <li><a  href="NewOrder.aspx">New Order</a></li>
+                          <li><a  href="OrderList.aspx">Order List</a></li>
+                          
+                        
+                      </ul>
+                  </li>
+                  
+                   
+                  <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-book"></i>
+                          <span>Raw Material</span>
+                      </a>
+                      <ul class="sub">
+                          
+                          <li><a  href="RawMatList.aspx">Raw Material List</a></li>
+                          
+                          
+                      </ul>
+                  </li>
+                  
+                    <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-cogs"></i>
+                          <span>Inventory</span>
+                      </a>
+                      <ul class="sub">
+                         
+                          <li><a  href="InventoryList.aspx">Inventory List</a></li>
+                          
+                        
+                      </ul>
+                  </li>
+                 
+                 
+
+           
+
+          </div>
+          <div id="EmpDiv" runat="server" visible="false">
+                  <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-desktop"></i>
+                          <span>Employee</span>
+                      </a>
+                      <ul class="sub">
+                          
+                          <li><a  href="EmployeeList.aspx">Employee List</a></li>
+                          
+                      </ul>
+                  </li>
+
+               
+
+                  <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-cogs"></i>
+                          <span>Customer</span>
+                      </a>
+                      <ul class="sub">
+                       
+                          <li><a  href="CustomerList.aspx">Customer List</a></li>
+                          
+                        
+                      </ul>
+                  </li>
+                   <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-cogs"></i>
+                          <span>Product</span>
+                      </a>
+                      <ul class="sub">
+                         
+                          <li><a  href="ProdList.aspx">Product List</a></li>
+                          
+                        
+                      </ul>
+                  </li>
+                  
+                   <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-cogs"></i>
+                          <span>Orders</span>
+                      </a>
+                      <ul class="sub">
+                         
+                          <li><a  href="OrderList.aspx">Order List</a></li>
+                          
+                        
+                      </ul>
+                  </li>
+                  
+                  
+                 
+
+             
+          </div>
+          <div id="AccDiv" runat="server" visible="false">
+    
+
+                  <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-desktop"></i>
+                          <span>Employee</span>
+                      </a>
+                      <ul class="sub">
+                          
+                          <li><a  href="EmployeeList.aspx">Employee List</a></li>
+                          
+                      </ul>
+                  </li>
+
+                   <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-cogs"></i>
+                          <span>Orders</span>
+                      </a>
+                      <ul class="sub">
+                          
+                          <li><a  href="OrderList.aspx">Order List</a></li>
+                          
+                        
+                      </ul>
+                  </li>
+                  
+                   <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-cogs"></i>
+                          <span> Invoices</span>
+                      </a>
+                      <ul class="sub">
+                          
+                           <li><a  href="ViewInvoice.aspx">View Invoices</a></li>
+                      </ul>
+                  </li>
+                    <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-cogs"></i>
+                          <span>Inventory</span>
+                      </a>
+                      <ul class="sub">
+                          
+                          <li><a  href="InventoryList.aspx">Inventory List</a></li>
+                         
+                          
+                        
+                      </ul>
+                  </li>
+                 
+                 
+
+         
+          </div>
+          <div id="StockDiv" runat="server" visible="false">
+                  <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-desktop"></i>
+                          <span>Employee</span>
+                      </a>
+                      <ul class="sub">
+                         
+                          <li><a  href="EmployeeList.aspx">Employee List</a></li>
+                          
+                      </ul>
+                  </li>
+
+                   <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-cogs"></i>
+                          <span>Orders</span>
+                      </a>
+                      <ul class="sub">
+                          
+                          <li><a  href="OrderList.aspx">Order List</a></li>
+                          
+                        
+                      </ul>
+                  </li>
+                  
+                   <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-cogs"></i>
+                          <span> Invoices</span>
+                      </a>
+                      <ul class="sub">
+                          
+                           <li><a  href="ViewInvoice.aspx">View Invoices</a></li>
+                      </ul>
+                  </li>
+                  <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-book"></i>
+                          <span>Supplier</span>
+                      </a>
+                      <ul class="sub">
+                          <li><a  href="EditSupplier.aspx">Add Suplier</a></li>
+                          <li><a  href="SupplierList.aspx">Supplier List</a></li>
+                          
+                          
+                      </ul>
+                  </li>
+                  <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-book"></i>
+                          <span>Raw Material</span>
+                      </a>
+                      <ul class="sub">
+                          <li><a  href="AddRawMat.aspx">Add Raw Material</a></li>
+                          <li><a  href="RawMatList.aspx">Raw Material List</a></li>
+                          
+                          
+                      </ul>
+                  </li>
+                  
+                    <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-cogs"></i>
+                          <span>Inventory</span>
+                      </a>
+                      <ul class="sub">
+                          <li><a  href="InventoryDetails.aspx">New Inventory</a></li>
+                          <li><a  href="InventoryList.aspx">Inventory List</a></li>
+                          <li><a  href="InventoryList.aspx">Generate GRN</a></li>
+                          
+                        
+                      </ul>
+                  </li>
+                 
+                 
+
+             
+
+          </div>
+          <div id="HRDiv" runat="server" visible="false">
+    
+                  <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-desktop"></i>
+                          <span>Employee</span>
+                      </a>
+                      <ul class="sub">
+                          <li><a  href="EditEmp.aspx">Add Employee</a></li>
+                          <li><a  href="EmployeeList.aspx">Employee List</a></li>
+                          
+                      </ul>
+                  </li>
+
+                   <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-desktop"></i>
+                          <span>Attendance</span>
+                      </a>
+                      <ul class="sub">
+                          <li><a  href="ImportAttendance.aspx">Import Attendance</a></li>
+                          <li><a  href="ViewAttendance.aspx">View Attendances</a></li>
+                          <li><a  href="EmpAttendance.aspx">Employee's Attendance Analysis</a></li>
+                      </ul>
+                  </li>
+
+                 
+
+             
+
+          </div>
+          <div id="DesignerDiv" runat="server" visible="false">	
+                  <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-cogs"></i>
+                          <span>Customer</span>
+                      </a>
+                      <ul class="sub">
+                          <li><a  href="EditCustomer.aspx">Add Customer</a></li>
+                          <li><a  href="CustomerList.aspx">Customer List</a></li>
+                          
+                        
+                      </ul>
+                  </li>
+                   <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-cogs"></i>
+                          <span>Product</span>
+                      </a>
+                      <ul class="sub">
+                          <li><a  href="NewProduct.aspx">New Product</a></li>
+                          <li><a  href="ProdList.aspx">Product List</a></li>
+                          
+                        
+                      </ul>
+                  </li>
+                   <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-cogs"></i>
+                          <span>Orders</span>
+                      </a>
+                      <ul class="sub">
+                          <li><a  href="NewOrder.aspx">New Order</a></li>
+                          <li><a  href="OrderList.aspx">Order List</a></li>
+                          
+                        
+                      </ul>
+                  </li>
+                    </div>
+              </ul>
+              <!-- sidebar menu end-->
+          </div>
+
+        
+      </aside>
+      <!--sidebar end-->
+      
+      <!-- **********************************************************************************************************************************************************
+      MAIN CONTENT
+      *********************************************************************************************************************************************************** -->
+      <!--main content start-->
+      <section id="main-content">
+          <section class="wrapper">
+
+              <div class="row">
+    <div>
+    
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+   
+              </div><! --/row -->
+          </section>
+      </section>
+
+      <!--main content end-->
+      <!--footer start-->
+      <footer class="site-footer dontprint">
+          <div class="text-center">
+              2014 - Bullion Flexipack
+              <a href="home.aspx#" class="go-top">
+                  <i class="fa fa-angle-up"></i>
+              </a>
+          </div>
+      </footer>
+      <!--footer end-->
+  </section>
+    <!-- js placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="//www.google.com/jsapi"></script>
+    <script src="Attc/attc.googleCharts.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script class="include" type="text/javascript" src="assets/js/jquery.dcjqaccordion.2.7.js"></script>
+    <script src="assets/js/jquery.scrollTo.min.js"></script>
+    <script src="assets/js/jquery.nicescroll.js" type="text/javascript"></script>
+    <script src="assets/js/jquery.sparkline.js"></script>
+    <!--common script for all pages-->
+    <script src="assets/js/common-scripts.js"></script>
+    <script type="text/javascript" src="assets/js/gritter/js/jquery.gritter.js"></script>
+    <script type="text/javascript" src="assets/js/gritter-conf.js"></script>
+    <!--script for this page-->
+    <script src="assets/js/sparkline-chart.js"></script>
+    <script src="assets/js/zabuto_calendar.js"></script>
+    <script type="application/javascript">
+        $(".moreat").click(function(){
+            $(this).parent().next().show();
+            $(this).hide();
+        });
+ 
+ 
+        $(document).ready(function () {
+            $("#date-popover").popover({html: true, trigger: "manual"});
+            $("#date-popover").hide();
+            $("#date-popover").click(function (e) {
+                $(this).hide();
+            });
+        
+            $("#my-calendar").zabuto_calendar({
+                action: function () {
+                    return myDateFunction(this.id, false);
+                },
+                action_nav: function () {
+                    return myNavFunction(this.id);
+                },
+                ajax: {
+                    url: "show_data.php?action=1",
+                    modal: true
+                },
+                legend: [
+                    {type: "text", label: "Special event", badge: "00"},
+                    {type: "block", label: "Regular event", }
+                ]
+            });
+        });
+        
+        
+        function myNavFunction(id) {
+            $("#date-popover").hide();
+            var nav = $("#" + id).data("navigation");
+            var to = $("#" + id).data("to");
+            console.log('nav ' + nav + ' to: ' + to.month + '/' + to.year);
+        }
+
+        function AjaxNotification() {
+            $.get("AjaxNotification.aspx", function (data, result) {
+                $(".AjaxNotification").html(data);
+            });
+        }
+        AjaxNotification();
+        setInterval(AjaxNotification, 5000);
+    </script>
+    <script>
+        $(document).ready(function () {
+
+            $(".txtRate").blur(function () {
+                var qty = $(this).parent().parent().find(".lblQuantity").html();
+                var rate = $(this).val();
+                $(this).parent().parent().find(".txtAmount").val(parseInt(qty) * parseFloat(rate));
+            });
+
+            $(".calculateall2").blur(function () {
+                var subtotal = 0;
+                $(".tblcalculation .txtAmount").each(function () {
+                    subtotal += parseFloat($(this).val());
+                });
+
+                if (!isNaN(subtotal)) {
+                    $(".txtSubTotal").val(subtotal);
+
+                    $(".txtDiscountTotal").val(subtotal * parseFloat($(".txtDiscount").val()) / 100);
+                    var dis = subtotal - $(".txtDiscountTotal").val();
+                    $(".txtDiscountSubTotal").val(dis);
+
+
+                    var dis2 = dis * parseFloat($(".txtExcise").val()) / 100;
+                    $(".txtExciseDis").val(dis2);
+
+                    var dis3 = dis * parseFloat($(".txtEduCess").val()) / 100;
+                    $(".txtEduCessDis").val(dis3);
+
+                    var dis4 = dis * parseFloat($(".txtSHEduCess").val()) / 100;
+                    $(".txtSHEduCessDis").val(dis4);
+
+                    var distotal = dis - (dis2 + dis3 + dis4);
+                    $(".txtNetAss2").val(distotal);
+
+                    var dis5 = distotal * parseFloat($(".txtCstGst").val()) / 100;
+                    $(".txtCstGstDis").val(dis5);
+
+                    var distotal2 = distotal + dis5 + parseFloat($(".txtFreight").val());
+                    $(".txtTot2").val(distotal2);
+
+                    var dis6 = distotal2 * parseFloat($(".txtOct").val()) / 100;
+                    $(".txtOctDis").val(dis6);
+
+                    var grandtot = distotal2 + dis6 + parseFloat($(".txtLoad").val()) + parseFloat($(".txtOther").val());
+                    $(".txtGTotal").val(grandtot);
+                }
+            });
+
+        });
+        
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(".calculateall").blur(function () {
+
+
+
+                $(".txtDiscountTotal").val(parseFloat($(".txtAmount").val()) * parseFloat($(".txtDiscount").val()) / 100);
+
+                var dis = $(".txtAmount").val() - $(".txtDiscountTotal").val();
+                $(".txtDiscountSubTotal").val(dis);
+
+                $(".txtPackDis").val(parseFloat($(".txtDiscountSubTotal").val()) * parseFloat($(".txtPack").val()) / 100);
+                var dis2 = parseFloat($(".txtDiscountSubTotal").val()) + parseFloat($(".txtPackDis").val());
+                $(".txtTotalAss").val(dis2);
+
+
+                
+                var dis3 = dis2 * parseFloat($(".txtExcise").val()) / 100;
+                $(".txtExciseDis").val(dis3);
+                var dis4 = dis2 * parseFloat($(".txtEduCess").val()) / 100;
+                $(".txtEduCessDis").val(dis4);
+                var dis5 = dis2 * parseFloat($(".txtSHECess").val()) / 100;
+                $(".txtSHECessDis").val(dis5);
+
+                var dis6 = dis2 + dis3 + dis4 + dis5 +  parseFloat($(".txtAddDuty").val());
+                $(".txtTot2").val(dis6);
+                var dis7 = dis6 * parseFloat($(".txtCSTGST").val()) / 100;
+                $(".txtCSTGSTDis").val(dis7);
+
+                $(".txtGTotal").val(dis6 + dis7 + parseFloat($(".txtFreight").val()));
+            });
+        });
+    </script>
+    <script>
+        //alert(1);
+        $("#dialog").dialog({
+            autoOpen: false,
+            height: 300,
+            width: 350,
+            modal: true
+        });
+        $("#dialog").parent().appendTo(jQuery("form:first"));
+        //alert(2);
+        $(".showdialog1").click(function () {
+            print();
+            //alert(3);
+            $("#dialog").dialog("open");
+            //alert(4);
+        });
+        $(document).ready(function () {
+            var doughnutData = [
+											{
+											    value: parseInt($(".lblPResentPerc").attr("Present")),
+											    color: "#68dff0"
+											},
+											{
+											    value: parseInt($(".lblPResentPerc").attr("Absent")),
+											    color: "#fdfdfd"
+											}
+										];
+            var myDoughnut = new Chart(document.getElementById("serverstatus01").getContext("2d")).Doughnut(doughnutData);
+        });
+								    
+    </script>
+    </form>
+</body>
+</html>

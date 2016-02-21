@@ -1,0 +1,49 @@
+F:\TRAINING\Practicals\Practice1\BusinessLogic\bin\Debug\BusinessLogic.dll
+F:\TRAINING\Practicals\Practice1\BusinessLogic\bin\Debug\BusinessLogic.pdb
+F:\TRAINING\Practicals\Practice1\BusinessLogic\bin\Debug\DataAccess.dll
+F:\TRAINING\Practicals\Practice1\BusinessLogic\bin\Debug\DataAccess.pdb
+F:\TRAINING\Practicals\Practice1\BusinessLogic\obj\Debug\ResolveAssemblyReference.cache
+F:\TRAINING\Practicals\Practice1\BusinessLogic\obj\Debug\BusinessLogic.dll
+F:\TRAINING\Practicals\Practice1\BusinessLogic\obj\Debug\BusinessLogic.pdb
+H:\OAPP2\BusinessLogic\obj\Debug\BusinessLogic.csprojResolveAssemblyReference.cache
+H:\OAPP2\BusinessLogic\obj\Debug\BusinessLogic.dll
+H:\OAPP2\BusinessLogic\obj\Debug\BusinessLogic.pdb
+H:\OAPP2\BusinessLogic\bin\Debug\BusinessLogic.dll
+H:\OAPP2\BusinessLogic\bin\Debug\BusinessLogic.pdb
+H:\OAPP2\BusinessLogic\bin\Debug\DataAccess.dll
+H:\OAPP2\BusinessLogic\bin\Debug\DataAccess.pdb
+C:\Users\Harikrushna\Desktop\OAPP2\BusinessLogic\bin\Debug\BusinessLogic.dll
+C:\Users\Harikrushna\Desktop\OAPP2\BusinessLogic\bin\Debug\BusinessLogic.pdb
+C:\Users\Harikrushna\Desktop\OAPP2\BusinessLogic\bin\Debug\DataAccess.dll
+C:\Users\Harikrushna\Desktop\OAPP2\BusinessLogic\bin\Debug\DataAccess.pdb
+C:\Users\Harikrushna\Desktop\OAPP2\BusinessLogic\obj\Debug\BusinessLogic.csprojResolveAssemblyReference.cache
+C:\Users\Harikrushna\Desktop\OAPP2\BusinessLogic\obj\Debug\BusinessLogic.dll
+C:\Users\Harikrushna\Desktop\OAPP2\BusinessLogic\obj\Debug\BusinessLogic.pdb
+H:\desk\kri\OAPP2\BusinessLogic\bin\Debug\BusinessLogic.dll
+H:\desk\kri\OAPP2\BusinessLogic\bin\Debug\BusinessLogic.pdb
+H:\desk\kri\OAPP2\BusinessLogic\bin\Debug\DataAccess.dll
+H:\desk\kri\OAPP2\BusinessLogic\bin\Debug\DataAccess.pdb
+H:\desk\kri\OAPP2\BusinessLogic\obj\Debug\BusinessLogic.csprojResolveAssemblyReference.cache
+H:\desk\kri\OAPP2\BusinessLogic\obj\Debug\BusinessLogic.dll
+H:\desk\kri\OAPP2\BusinessLogic\obj\Debug\BusinessLogic.pdb
+C:\Users\Paulomi\Desktop\OAPP2\BusinessLogic\bin\Debug\BusinessLogic.dll
+C:\Users\Paulomi\Desktop\OAPP2\BusinessLogic\bin\Debug\BusinessLogic.pdb
+C:\Users\Paulomi\Desktop\OAPP2\BusinessLogic\bin\Debug\DataAccess.dll
+C:\Users\Paulomi\Desktop\OAPP2\BusinessLogic\bin\Debug\DataAccess.pdb
+C:\Users\Paulomi\Desktop\OAPP2\BusinessLogic\obj\Debug\BusinessLogic.csprojResolveAssemblyReference.cache
+C:\Users\Paulomi\Desktop\OAPP2\BusinessLogic\obj\Debug\BusinessLogic.dll
+C:\Users\Paulomi\Desktop\OAPP2\BusinessLogic\obj\Debug\BusinessLogic.pdb
+K:\Project\OAPP2\BusinessLogic\bin\Debug\BusinessLogic.dll
+K:\Project\OAPP2\BusinessLogic\bin\Debug\BusinessLogic.pdb
+K:\Project\OAPP2\BusinessLogic\bin\Debug\DataAccess.dll
+K:\Project\OAPP2\BusinessLogic\bin\Debug\DataAccess.pdb
+K:\Project\OAPP2\BusinessLogic\obj\Debug\ResolveAssemblyReference.cache
+K:\Project\OAPP2\BusinessLogic\obj\Debug\BusinessLogic.dll
+K:\Project\OAPP2\BusinessLogic\obj\Debug\BusinessLogic.pdb
+C:\Users\patelinfo\Desktop\Final Year Project\OAPP2\BusinessLogic\bin\Debug\BusinessLogic.dll
+C:\Users\patelinfo\Desktop\Final Year Project\OAPP2\BusinessLogic\bin\Debug\BusinessLogic.pdb
+C:\Users\patelinfo\Desktop\Final Year Project\OAPP2\BusinessLogic\bin\Debug\DataAccess.dll
+C:\Users\patelinfo\Desktop\Final Year Project\OAPP2\BusinessLogic\bin\Debug\DataAccess.pdb
+C:\Users\patelinfo\Desktop\Final Year Project\OAPP2\BusinessLogic\obj\Debug\BusinessLogic.csprojResolveAssemblyReference.cache
+C:\Users\patelinfo\Desktop\Final Year Project\OAPP2\BusinessLogic\obj\Debug\BusinessLogic.dll
+C:\Users\patelinfo\Desktop\Final Year Project\OAPP2\BusinessLogic\obj\Debug\BusinessLogic.pdb

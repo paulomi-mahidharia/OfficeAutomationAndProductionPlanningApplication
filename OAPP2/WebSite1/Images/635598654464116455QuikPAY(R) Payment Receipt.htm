@@ -1,0 +1,710 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0060)https://quikpayasp.com/asu/qp/epay/preparePaymentReceipt.do# -->
+<html lang="en-us"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>
+    QuikPAY(R)
+  
+      Payment Receipt
+  
+  </title>
+  
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="X-UA-Compatible" content="IE=8">  
+  <script type="text/javascript" async="" src="./QuikPAY(R) Payment Receipt_files/ga.js"></script><script type="text/javascript" src="./QuikPAY(R) Payment Receipt_files/jquery-1.5.min.js"></script>
+  <script type="text/javascript" src="./QuikPAY(R) Payment Receipt_files/Util.js"></script> 
+  <script type="text/javascript" src="./QuikPAY(R) Payment Receipt_files/toggle.js"></script> 
+  <link rel="stylesheet" type="text/css" href="./QuikPAY(R) Payment Receipt_files/container.css">  
+  <link rel="stylesheet" type="text/css" href="./QuikPAY(R) Payment Receipt_files/Style.css">
+  <link rel="stylesheet" type="text/css" href="./QuikPAY(R) Payment Receipt_files/Style(1).css">
+  <style type="text/css">
+    
+.attentionBoldText{color:#990033;font-weight:bold;}
+.attentionText{color:#990033;}
+.button{border-width:1px;color:white;font-family:arial;border-color:#990033;border-style:solid;font-size:12px;font-weight:bold;background-color:#640021;}
+.errorText{color:red;}
+.generalLink{color:black;text-decoration:underline;}
+.generalText{color:black;font-family:arial;font-size:12px;background-color:white;}
+.generalTextBold{color:black;font-family:arial;font-size:12px;font-weight:bold;background-color:white;}
+.inputBox{border-width:1px;color:black;font-family:verdana,arial;border-color:black;border-style:solid;font-size:12px;background-color:white;}
+.majorMenu{font-family:arial;font-size:12px;font-weight:bold;background-color:#ffffff;}
+.majorMenuBorder{border-color:#ffffff;}
+.majorMenuLink{color:#990033;text-decoration:none;}
+.majorMenuLinkSelected{color:#000000;text-decoration:underline;}
+.messageText{color:#990033;}
+.pageTitle{color:black;font-family:arial;font-size:20px;font-weight:bold;}
+.sideBar{background-color:#FFFFFF;}
+.statusBar{color:black;font-family:arial;font-size:13px;font-weight:bold;background-color:#dddddd;}
+.statusBarBorderColor{border-color:#bbbbbb;}
+.subMenu{font-family:arial;font-size:11px;;font-weight:normal;background-color:#FFFFFF;}
+.subMenuLink{color:#990033;text-decoration:none;}
+.subMenuLinkSelected{color:#000000;text-decoration:underline;}
+.subTitle{color:black;font-family:arial;font-size:12px;font-weight:bold;background-color:#C0B17A;}
+.tableBorderColor{border-color:#C0B17A;}
+.tableEvenRow{color:black;font-family:arial;font-size:11px;background-color:white;}
+.tableHeaderRow{color:white;font-family:arial;font-size:11px;font-weight:bold;background-color:#666666;}
+.tableOddRow{color:black;font-family:arial;font-size:11px;background-color:#EDEDED;}
+A.generalLink:hover{color:#990033;text-decoration:underline;}
+A.majorMenuLink:hover{color:#000000;text-decoration:underline;}
+A.subMenuLink:hover{color:#000000;text-decoration:underline;}
+body{color:black;font-size:12px;background-color:whitesmoke;}
+  </style>
+  <script type="text/javascript">
+   	 var _gaq = _gaq || [];
+	 _gaq.push(['_setAccount', 'UA-32459227-1']);
+	 _gaq.push(['_trackPageview']);
+	 (function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })();
+  </script>
+</head>
+
+<body class="yui-skin-sam">
+
+  
+  
+  
+    <div id="template_MainTemplate">
+      <!-- Logo -->
+      <div id="template_MainTemplate_logo">
+              
+        <noscript>
+          &lt;div id="template_MainTemplate_noscript" class="generalText statusBarBorderColor" &gt;
+            &lt;span class="attentionText"&gt;
+              &lt;strong&gt;Warning!&lt;/strong&gt; This site makes use of JavaScript, but your browser either does not support JavaScript or has it turned off. Parts of this site may therefore not work as expected.
+            &lt;/span&gt;
+          &lt;/div&gt;
+        </noscript>
+        
+
+
+
+
+  
+
+
+
+
+<div id="template_include_Logo">
+
+  
+  
+    <img src="./QuikPAY(R) Payment Receipt_files/asulogo-gold.gif" alt="Logo" border="0">
+  
+
+
+</div>
+      </div>
+      <!-- Status Bar -->
+      <div id="template_MainTemplate_statusBar">
+        
+
+
+
+
+
+
+
+
+
+  
+    
+  
+  
+
+ 
+   
+   
+     
+     
+   
+ 
+
+<div id="template_include_StatusBar" class="statusBar statusBarBorderColor">
+
+
+
+  <div id="template_include_StatusBar_name" class="statusBar">
+		
+		  
+	      &nbsp;
+	      Commerce Manager Payer
+	      
+	      
+	        
+	      
+	      
+		  
+		  
+		  
+  </div>
+  
+  <div id="template_include_StatusBar_actions" class="statusBar">
+    &nbsp;
+    <a class="statusBar" href="javascript:openPopUpWindow('http://www.campuscommerce.com/page.cfm?p=272', 'width=1050,height=700,scrollbars,resizable,left=0,top=0')">
+      <img src="./QuikPAY(R) Payment Receipt_files/inform_off.gif" alt="icon">
+      Privacy Policy</a>
+
+    
+      
+      
+
+      <a class="statusBar" href="https://quikpayasp.com/asu/qp/login/logoff.do">
+        <img src="./QuikPAY(R) Payment Receipt_files/logoff_off.gif" alt="icon">
+        Log Off</a>
+    
+  </div>
+  
+  <div style="clear:both;"></div>
+
+</div>
+
+
+
+      </div>
+      <div id="template_MainTemplate_main" class="sideBar">
+        <!-- Side Bar -->
+        <div id="template_MainTemplate_sideBar">
+          
+
+
+
+
+
+
+
+
+<div id="template_include_SideBar" class="sideBar">
+  
+</div>
+
+        </div>
+        <!-- Content -->
+        <div id="template_MainTemplate_content" class="generalText">
+          
+
+
+
+
+<div id="template_include_Content">
+  <a name="content">  
+      <h1 id="template_include_Content_title" class="pageTitle">
+        Payment Receipt
+      </h1>
+    
+  </a>
+  
+  
+    <div id="template_include_Content_header" class="generalText">
+      This is your receipt.
+    </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <div id="template_include_Content_content" class="generalText">
+    
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="./QuikPAY(R) Payment Receipt_files/Style(2).css">
+
+<div id="epay_PaymentReceipt">
+  <div class="generalText">
+    <a class="generalLink" style="white-space:nowrap; float:right;" href="./QuikPAY(R) Payment Receipt_files/QuikPAY(R) Payment Receipt.htm" onclick="openReceiptWindow();return true;">
+      <img src="./QuikPAY(R) Payment Receipt_files/print_off.gif" alt="Print" class="linkIcon">
+      
+      Print
+      
+      
+    </a>
+    
+    Please click the Print icon to generate a printer-friendly <br> version for your records.
+    
+    
+  </div>
+
+  <br>
+
+  
+    
+
+
+
+<script type="text/javascript" src="./QuikPAY(R) Payment Receipt_files/userchoice.js"></script>
+
+
+
+
+
+
+<div class="ioTable tableBorderColor">
+  <table class="ioTable" cellspacing="0" summary="This table displays a payment message, confirmation number, account name, date and amount for this payment.">
+    <tbody><tr class="generalText">
+      <td id="epay_include_PaymentReceiptElement_resultMessage" colspan="2" class="ioValue tableBorderColor">
+        
+          
+            
+                <span>
+                
+                  The payment has been submitted by Commerce Manager Payer. Thank you.
+                
+                
+            
+            
+            
+          
+
+          
+
+          
+        
+
+        
+        
+          <br>
+          
+        
+        </span>
+      </td>
+    </tr>
+    <tr class="generalText" id="epay_include_PaymentReceiptElement_confirmNumber">
+      <td class="ioLabel">
+        
+        Confirmation Number:
+      </td>
+      <td class="ioValue">
+        <span class="attentionText">351195105</span>
+      </td>
+    </tr>
+
+    
+
+    
+      <tr class="generalText">
+        <td class="ioLabel">
+          
+          Payment Date:
+        </td>
+        <td class="ioValue">
+          Nov 21, 2014 at 9:51 PM, MST
+        </td>
+      </tr>
+      <tr class="generalText">
+        <td class="ioLabel">
+          
+          Effective Date:
+        </td>
+        <td class="ioValue">
+          Nov 22, 2014
+        </td>
+      </tr>
+    
+
+    
+      
+        <tr class="generalText">
+          <td class="ioLabel">
+            
+            Primary User Id:
+          </td>
+          <td class="ioValue">
+            payer
+          </td>
+        </tr>
+      
+    
+
+    
+      <tr class="generalText">
+        <td class="ioLabel">
+          
+          Primary User Name:
+        </td>
+        <td class="ioValue">
+          Commerce Manager Payer
+        </td>
+      </tr>
+    
+
+    <tr class="generalText">
+      <td class="ioLabel">
+        
+        <label for="null" class="propertyValue">Account:</label>
+      </td>
+      <td class="ioValue">
+        ASU Graduate Admissions App Fee
+      </td>
+    </tr>
+
+
+     
+     
+
+
+    <tr class="generalText">
+      <td class="ioLabel">
+        
+        
+          <label for="null" class="propertyValue">Application Fee:</label>
+        
+        
+        
+      </td>
+      <td class="ioValue">
+        $90.00
+      </td>
+    </tr>
+
+    
+    
+    
+    
+    
+
+    <tr class="generalText">
+      <td class="ioLabel">
+        
+          Cardholder's Name:
+        
+        
+        
+      </td>
+      <td class="ioValue">
+        Girish Govinda
+      </td>
+    </tr>
+
+    <tr class="generalText">
+      <td class="ioLabel">
+        Payment Method:
+      </td>
+      <td class="ioValue">
+        VISA
+        ************4473
+      </td>
+    </tr>
+
+
+    
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+
+    
+	    <tr id="epay_include_PaymentReceiptElement_addressInfo" class="generalText">
+	      <td class="ioLabel">
+	        Billing Address Info:
+	      </td>
+	      <td class="ioValue">
+	        58-59, Narayandham Duplex,
+	        
+	          <br>
+	          Opp. RTO, Warasiya
+	        
+	        <br>
+	        Vadodara,
+	        GJ
+	        390006
+	        
+	          <br>
+	          INDIA
+	        
+	      </td>
+	    </tr>
+    
+
+    
+      <tr id="epay_include_PaymentReceiptElement_contactInfo" class="generalText">
+        <td class="ioLabel">
+          Contact Info:
+        </td>
+        <td class="ioValue">
+          
+          
+          
+            <div>
+              p.mahi257@gmail.com
+              <span class="comment">
+                (e-mail)
+              </span>
+            </div>
+          
+        </td>
+      </tr>
+    
+  </tbody></table>
+</div>
+
+
+  <div id="epay_include_PaymentReceiptElement_message" class="generalText">
+    <span class="messageText">
+      Thank you for your payment.  Your transaction will be processed within 1 to 2 business days.  At this time, no further action is required.
+    </span>
+  </div>
+
+
+  
+</div>
+
+<script>
+ko = new Date();
+ji = ko.getTime();
+
+function openReceiptWindow()
+{
+    var myPopupWindow = '';
+    myPopupWindow= window.open("/asu/qp/epay/preparePrintPaymentReceipt.do",'printReceipt_' + ji, "location=no, scrollbars=yes, resizable=no, toolbar=no, menubar=no, width=630, height=500"); 
+    return true;
+}
+</script>
+
+  </div>
+  
+  
+    <div id="template_include_Content_footer" class="generalText">
+       
+    </div>
+  
+</div>
+
+        </div>
+      </div>
+      <!-- Copyright -->
+      <div id="template_MainTemplate_copyright">
+        
+
+
+
+
+
+
+
+<div id="template_include_Copyright">
+  
+  
+    
+  <img id="template_include_Copyright_qp" src="./QuikPAY(R) Payment Receipt_files/QPpoweredby.gif" alt="Powered by QuikPAY(R)">
+  
+       
+	  <div id="template_include_Copyright_vs">
+	    <script src="./QuikPAY(R) Payment Receipt_files/getseal"></script><a href="javascript:vrsn_splash()" tabindex="-1"><img name="seal" border="true" src="./QuikPAY(R) Payment Receipt_files/getseal(1)" oncontextmenu="return false;" alt="Click to Verify - This site has chosen an SSL Certificate to improve Web site security"></a>
+	  </div>
+  
+  
+  
+  
+	<div id="template_include_Copyright_text">
+	  Copyright ©
+	  2001 - 2014.
+	  <i>Nelnet Business Solutions, Inc.</i>
+	  All rights reserved.
+	  <br>
+	  <i>QuikPAY</i> is a registered trademark of
+	  <i>Nelnet Business Solutions, Inc.</i>
+	</div>
+</div>
+      </div>      
+
+    </div>
+  
+
+
+
+  <script language="JavaScript">
+    <!--
+    initializePage();
+    -->
+  </script>
+
+
+
+
+</body></html>

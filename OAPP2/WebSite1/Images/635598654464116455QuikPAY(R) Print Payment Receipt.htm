@@ -1,0 +1,536 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0064)https://quikpayasp.com/asu/qp/epay/preparePrintPaymentReceipt.do -->
+<html lang="en-us"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>
+    QuikPAY(R)
+  
+      Print Payment Receipt
+  
+  </title>
+  
+  
+  <link rel="stylesheet" type="text/css" href="./QuikPAY(R) Print Payment Receipt_files/Style.css">
+  <link rel="stylesheet" type="text/css" href="./QuikPAY(R) Print Payment Receipt_files/Style(1).css">
+  <style type="text/css" media="all">
+    
+.attentionBoldText{color:#990033;font-weight:bold;}
+.attentionText{color:#990033;}
+.button{border-width:1px;color:white;font-family:arial;border-color:#990033;border-style:solid;font-size:12px;font-weight:bold;background-color:#640021;}
+.errorText{color:red;}
+.generalLink{color:black;text-decoration:underline;}
+.generalText{color:black;font-family:arial;font-size:12px;background-color:white;}
+.generalTextBold{color:black;font-family:arial;font-size:12px;font-weight:bold;background-color:white;}
+.inputBox{border-width:1px;color:black;font-family:verdana,arial;border-color:black;border-style:solid;font-size:12px;background-color:white;}
+.majorMenu{font-family:arial;font-size:12px;font-weight:bold;background-color:#ffffff;}
+.majorMenuBorder{border-color:#ffffff;}
+.majorMenuLink{color:#990033;text-decoration:none;}
+.majorMenuLinkSelected{color:#000000;text-decoration:underline;}
+.messageText{color:#990033;}
+.pageTitle{color:black;font-family:arial;font-size:20px;font-weight:bold;}
+.sideBar{background-color:#FFFFFF;}
+.statusBar{color:black;font-family:arial;font-size:13px;font-weight:bold;background-color:#dddddd;}
+.statusBarBorderColor{border-color:#bbbbbb;}
+.subMenu{font-family:arial;font-size:11px;;font-weight:normal;background-color:#FFFFFF;}
+.subMenuLink{color:#990033;text-decoration:none;}
+.subMenuLinkSelected{color:#000000;text-decoration:underline;}
+.subTitle{color:black;font-family:arial;font-size:12px;font-weight:bold;background-color:#C0B17A;}
+.tableBorderColor{border-color:#C0B17A;}
+.tableEvenRow{color:black;font-family:arial;font-size:11px;background-color:white;}
+.tableHeaderRow{color:white;font-family:arial;font-size:11px;font-weight:bold;background-color:#666666;}
+.tableOddRow{color:black;font-family:arial;font-size:11px;background-color:#EDEDED;}
+A.generalLink:hover{color:#990033;text-decoration:underline;}
+A.majorMenuLink:hover{color:#000000;text-decoration:underline;}
+A.subMenuLink:hover{color:#000000;text-decoration:underline;}
+body{color:black;font-size:12px;background-color:whitesmoke;}
+    body{background-color: white; color: black;}
+    .attentionBoldText{color: black;}
+    .attentionText{color: black;}
+    .errorText{background-color: white; color: red;}
+    .generalText{background-color: white; color: black;}
+    .generalTextBold{background-color: white; color: black;}
+    .messageText{background-color:white; color: blue;}
+    .pageTitle{background-color: white; color: black;}
+    .subTitle{background-color: black; color: white;}
+    .tableBorderColor{border-color: black;}
+    .tableEvenRow{background-color: white; color: black;}
+    .tableHeaderRow{background-color: #999999; color: black;}
+    .tableOddRow{fbackground-color: #EDEDED; color: black;}
+     div.actionSetTop{display: none;}
+  </style>
+  <style type="text/css" media="print">
+    div#template_PrintTemplate_statusBar
+      {display: none;}
+  </style>
+</head>
+
+<body>
+
+  <div id="template_PrintTemplate">
+
+    <!-- Status Bar -->
+    <div id="template_PrintTemplate_statusBar" class="statusBar statusBarBorderColor">
+      <a class="statusBar" href="javascript:window.print()">
+        <img src="./QuikPAY(R) Print Payment Receipt_files/print_off.gif" alt="icon">
+        Print</a>
+      
+      <a class="statusBar" href="javascript:window.close()">
+        <img src="./QuikPAY(R) Print Payment Receipt_files/logoff_off.gif" alt="icon">
+        Close</a>
+      
+    </div>
+    <!-- Content -->
+    <div id="template_PrintTemplate_content" class="generalText">
+      
+
+
+
+
+<div id="template_include_Content">
+  <a name="content">  
+      <h1 id="template_include_Content_title" class="pageTitle">
+        Payment Receipt
+      </h1>
+    
+  </a>
+  
+  
+    <div id="template_include_Content_header" class="generalText">
+      This is your receipt.
+    </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <div id="template_include_Content_content" class="generalText">
+    
+
+
+
+
+<script>
+window.print()
+</script>
+
+<link rel="stylesheet" type="text/css" href="./QuikPAY(R) Print Payment Receipt_files/Style(2).css">
+
+<div id="epay_PrintPaymentReceipt">
+
+
+  
+
+
+
+<script type="text/javascript" src="./QuikPAY(R) Print Payment Receipt_files/userchoice.js"></script>
+
+
+
+
+
+
+<div class="ioTable tableBorderColor">
+  <table class="ioTable" cellspacing="0" summary="This table displays a payment message, confirmation number, account name, date and amount for this payment.">
+    <tbody><tr class="generalText">
+      <td id="epay_include_PaymentReceiptElement_resultMessage" colspan="2" class="ioValue tableBorderColor">
+        
+          
+            
+                <span>
+                
+                  The payment has been submitted by Commerce Manager Payer. Thank you.
+                
+                
+            
+            
+            
+          
+
+          
+
+          
+        
+
+        
+        
+          <br>
+          
+        
+        </span>
+      </td>
+    </tr>
+    <tr class="generalText" id="epay_include_PaymentReceiptElement_confirmNumber">
+      <td class="ioLabel">
+        
+        Confirmation Number:
+      </td>
+      <td class="ioValue">
+        <span class="attentionText">351195105</span>
+      </td>
+    </tr>
+
+    
+
+    
+      <tr class="generalText">
+        <td class="ioLabel">
+          
+          Payment Date:
+        </td>
+        <td class="ioValue">
+          Nov 21, 2014 at 9:51 PM, MST
+        </td>
+      </tr>
+      <tr class="generalText">
+        <td class="ioLabel">
+          
+          Effective Date:
+        </td>
+        <td class="ioValue">
+          Nov 22, 2014
+        </td>
+      </tr>
+    
+
+    
+      
+        <tr class="generalText">
+          <td class="ioLabel">
+            
+            Primary User Id:
+          </td>
+          <td class="ioValue">
+            payer
+          </td>
+        </tr>
+      
+    
+
+    
+      <tr class="generalText">
+        <td class="ioLabel">
+          
+          Primary User Name:
+        </td>
+        <td class="ioValue">
+          Commerce Manager Payer
+        </td>
+      </tr>
+    
+
+    <tr class="generalText">
+      <td class="ioLabel">
+        
+        <label for="null" class="propertyValue">Account:</label>
+      </td>
+      <td class="ioValue">
+        ASU Graduate Admissions App Fee
+      </td>
+    </tr>
+
+
+     
+     
+
+
+    <tr class="generalText">
+      <td class="ioLabel">
+        
+        
+          <label for="null" class="propertyValue">Application Fee:</label>
+        
+        
+        
+      </td>
+      <td class="ioValue">
+        $90.00
+      </td>
+    </tr>
+
+    
+    
+    
+    
+    
+
+    <tr class="generalText">
+      <td class="ioLabel">
+        
+          Cardholder's Name:
+        
+        
+        
+      </td>
+      <td class="ioValue">
+        Girish Govinda
+      </td>
+    </tr>
+
+    <tr class="generalText">
+      <td class="ioLabel">
+        Payment Method:
+      </td>
+      <td class="ioValue">
+        VISA
+        ************4473
+      </td>
+    </tr>
+
+
+    
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+      
+        
+        
+      
+    
+
+    
+	    <tr id="epay_include_PaymentReceiptElement_addressInfo" class="generalText">
+	      <td class="ioLabel">
+	        Billing Address Info:
+	      </td>
+	      <td class="ioValue">
+	        58-59, Narayandham Duplex,
+	        
+	          <br>
+	          Opp. RTO, Warasiya
+	        
+	        <br>
+	        Vadodara,
+	        GJ
+	        390006
+	        
+	          <br>
+	          INDIA
+	        
+	      </td>
+	    </tr>
+    
+
+    
+      <tr id="epay_include_PaymentReceiptElement_contactInfo" class="generalText">
+        <td class="ioLabel">
+          Contact Info:
+        </td>
+        <td class="ioValue">
+          
+          
+          
+            <div>
+              p.mahi257@gmail.com
+              <span class="comment">
+                (e-mail)
+              </span>
+            </div>
+          
+        </td>
+      </tr>
+    
+  </tbody></table>
+</div>
+
+
+  <div id="epay_include_PaymentReceiptElement_message" class="generalText">
+    <span class="messageText">
+      Thank you for your payment.  Your transaction will be processed within 1 to 2 business days.  At this time, no further action is required.
+    </span>
+  </div>
+
+
+
+
+</div>
+
+  </div>
+  
+  
+    <div id="template_include_Content_footer" class="generalText">
+       
+    </div>
+  
+</div>
+
+    </div>
+
+  </div>
+
+
+</body></html>
